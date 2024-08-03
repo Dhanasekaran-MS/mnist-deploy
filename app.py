@@ -1,4 +1,3 @@
-import pickle
 import tensorflow as tf
 from tensorflow import keras
 import streamlit as st
@@ -6,8 +5,7 @@ from PIL import Image
 import numpy as np
 
 # Load the trained model
-file = 'mnist_model.sav'
-model = pickle.load(open(file, 'rb'))
+model = tf.keras.models.load_model('mnist_model.h5')
 
 # Define the web app layout
 st.title("MNIST Digit Recognizer")
