@@ -27,9 +27,9 @@ if uploaded_file is not None:
 
     st.balloons()
     # Display the results
-    st.image(uploaded_file, caption="Uploaded Image", use_column_width=True)
+    st.image(uploaded_file, caption="Uploaded Image")
     st.write('-------------------------------------------------------------')
     st.write('-------------------------------------------------------------')
-    st.write("Predicted Digit:", predicted_digit)
+    st.write("Predicted Digit:", digit)
 
 
