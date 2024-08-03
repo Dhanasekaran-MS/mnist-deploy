@@ -8,10 +8,10 @@ import numpy as np
 model = tf.keras.models.load_model('mnist_model.h5')
 
 # Define the web app layout
-st.title("MNIST Digit Recognizer")
-st.sidebar.title("Upload Image")
+st.title(":red[MNIST Digit Recognizer]")
+st.header("Upload Image")
 
-uploaded_file = st.sidebar.file_uploader("Upload an image of a digit (0-9)", type=["jpg", "png"])
+uploaded_file = st.file_uploader("Upload an image of a digit (0-9)", type=["jpg", "png"])
 
 if uploaded_file is not None:
     # Load and process the image
